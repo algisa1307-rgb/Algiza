@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lab Fisika Optik & Spektroskopi — Aesthetic Pink</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --pink1:#ffe5f1;
+      --pink2:#ffc8df;
+      --pink3:#ff9cc6;
+      --pink4:#ff6fa3;
+      --text:#603349;
+      --card:#ffffffcc;
+      --shadow:0 10px 40px rgba(255,150,200,0.25);
+      --radius:22px;
+      --glass:rgba(255,240,247,0.45);
+      font-family:'Poppins',sans-serif;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      background:linear-gradient(135deg,var(--pink1),var(--pink2));
+      color:var(--text);
+      overflow-x:hidden;
+    }
+    header{
+      position:fixed;top:20px;left:0;right:0;display:flex;justify-content:center;z-index:999;
+    }
+    .nav{
+      background:var(--glass);
+      padding:14px 26px;
+      border-radius:30px;
+      backdrop-filter:blur(10px);
+      box-shadow:var(--shadow);
+      display:flex;align-items:center;gap:22px;
+    }
+    .nav a{
+      font-weight:600;color:var(--text);padding:8px 14px;border-radius:12px;
+      transition:.3s;
+    }
+    .nav a:hover{
+      background:var(--pink3);color:white;
+    }
+    .brand{
+      font-size:18px;font-weight:800;color:var(--pink4);
+    }
+
+    /* Hero Section */
+    .hero{
+      padding-top:160px;text-align:center;padding-bottom:40px;
+    }
+    .hero h1{
+      font-size:38px;font-weight:800;
+      background:linear-gradient(90deg,var(--pink4),var(--pink3));
+      -webkit-background-clip:text;color:transparent;
+      animation:fadeInUp .8s ease both;
+    }
+    .hero p{
+      margin-top:12px;font-size:15px;color:#6e4a58;
+    }
+
+    @keyframes fadeInUp{
+      from{opacity:0;transform:translateY(20px)}
+      to{opacity:1;transform:translateY(0)}
+    }
+
+    /* Cards */
+    .section{
+      width:92%;max-width:1100px;margin:auto;margin-top:40px;
+    }
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:26px;
+      box-shadow:var(--shadow);
+      margin-bottom:24px;
+      animation:fadeIn .6s ease;
+    }
+    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+
+    .card h2{
+      margin-bottom:10px;font-size:22px;color:var(--pink4);
+    }
+
+    table{
+      width:100%;border-collapse:collapse;margin-top:16px;
+    }
+    th,td{
+      padding:12px;border-bottom:1px solid rgba(255,120,180,0.2);
+    }
+    th{background:var(--pink2);color:white;border-radius:8px;}
+
+    .badge{
+      background:var(--pink3);padding:6px 12px;border-radius:18px;color:white;font-weight:600;
+    }
+
+    /* Link menu aesthetic */
+    .menu-grid{
+      display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:26px;
+    }
+    .menu-item{
+      background:linear-gradient(135deg,var(--pink3),var(--pink4));
+      padding:20px;border-radius:18px;color:white;font-weight:700;
+      text-align:center;font-size:18px;cursor:pointer;
+      transition:.3s;box-shadow:var(--shadow);
+    }
+    .menu-item:hover{
+      transform:translateY(-8px) scale(1.03);
+    }
+
+    footer{
+      text-align:center;margin:40px 0;color:#7d5a6c;font-size:14px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">Lab Optik & Spektroskopi</div>
+    <a href="#mhs">Mahasiswa</a>
+    <a href="#dosen">Dosen</a>
+    <a href="#publikasi">Publikasi</a>
+    <a href="#struktur">Struktur</a>
+  </div>
+</header>
+
+<div class="hero">
+  <h1>Portal Lab Fisika Optik & Spektroskopi</h1>
+  <p>Desain pink aesthetic — clean, soft, dan modern.</p>
+</div>
+
+<div class="section">
+  <div class="menu-grid">
+    <a href="#mhs" class="menu-item">Database Mahasiswa</a>
+    <a href="#dosen" class="menu-item">Database Dosen</a>
+    <a href="#publikasi" class="menu-item">Publikasi Penelitian</a>
+    <a href="#struktur" class="menu-item">Struktur Laboratorium</a>
+  </div>
+</div>
+
+<div class="section" id="mhs">
+  <div class="card">
+    <h2>📘 Database Mahasiswa</h2>
+    <table>
+      <tr><th>Nama</th><th>Prodi</th><th>Nim</th><th>
+      <tr><td>Algiza Idam</td><td>Fisika</td><td>H021231028</td><td>
+      <tr><td>Aqasya Claudia Zahnita</td><td>Fisika</td><td>H021231068</td><td>
+      <tr><td>Armitha Anas</td><td>Fisika</td><td>H021231060</td><td></td>
+     <tr><td>Dea Aulia Masiku</td><td>Fisika</td><td>H021231002</td><td></td>
+     <tr><td>Eka Adelia Putri Sariman</td><td>Fisika</td><td>H021231065</td><td></td>
+     <tr><td>Fajriana Aris</td><td>Fisika</td><td>H021231014</td><td>
+     <tr><td>Icha Nurandhini</td><td>Fisika</td><td>H021231021</td><td>
+     <tr><td>Ilma Fadhilah</td><td>Fisika</td><td>H021231064</td><td>
+     <tr><td>Kasyfil Aziz</td><td>Fisika</td><td>H021231058</td><td></td>
+     <tr><td>Moh. Aryansyah Rizqullah Daenunu</td><td>Fisika</td><td>H021231062</td><td>
+     <tr><td>Nurfaika</td><td>Fisika</td><td>H021231048</td><td>
+     <tr><td>Serli</td><td>Fisika</td><td>H021231032</td><td></td>
+     <tr><td>Suci Rahmayada</td><td>Fisika</td><td>H021231059</td><td>
+     <tr><td>Tayha Sri Desiana</td><td>Fisika</td><td>H021231049</td><td>
+     <tr><td>Wirni Aulia Ramadhani</td><td>Fisika</td><td>H021231040</td><td>
+     <tr><td>ST. Rahmayanti</td><td>Fisika</td><td>H021231044</td><td>
+     <tr><td>Nurul Iftitah Y.G</td><td>Fisika</td><td>H021231056</td><td></td>
+     <tr><td>Muh. Asnawi</td><td>Fisika</td><td>H021231027</td><td></td>
+     <tr><td>Nur Fadiyah</td><td>Fisika</td><td>H021231011</td><td></td>
+     <tr><td>Azzuhra Fibry Ananta Rahman</td><td>Fisika</td><td>H021231015</td><td></td>
+     <tr><td>Andira Maharani</td><td>Fisika</td><td>H021231025</td><td></td>
+                    </td>
+                </td>
+            </td>
+        </td>
+            </td>
+        </td>
+            </td>
+        </td>
+    </td>
+    </table>
+  </div>
+</div>
+
+<div class="section" id="dosen">
+  <div class="card">
+    <h2>👩‍🏫 Database Dosen</h2>
+    <table>
+      <tr><th>Nama</th><th>Bidang</th></tr>
+      <tr><td>Prof.Dr. Syamsir D., D., MS.</td><td>Fisika Optik & Spektroskopi</td><td>
+      <tr><td>Ajeng Anggreny Ibrahim, S.Pd., M.Si</td><td>Fisika Optik & Spektroskopi</td><td>
+      <tr><td>Arfinna, S.Si., M.Si., F.Med</td><td>Fisika Optik & Spektroskopi</td><td>
+      <tr><td>Ayu Hardianti Pratiwi, S.Pd., M.Si</td><td>Fisika Optik & Spektroskopi</td><td>
+      <tr><td>Bannu, S.Si.,M.Si</td><td>Fisika Optik & Spektroskopi</td><td>
+      <tr><td>Dr. Sri Dewi Astuty, S.Si.,M.Si.</td><td>Fisika Optik & Spektrokopi</td><td>
+    </table>
+  </div>
+</div>
+
+<div class="section" id="publikasi">
+  <div class="card">
+    <h2>📚 Publikasi Penelitian</h2>
+    <table>
+      <tr><th>Judul</th><th>
+      <tr><td>Analisis Nilai Low Contrast Dan Noise Ratio Citra Pasien Plak Koroner Menggunakan Indoqct</td><td>
+      <tr><td>Evaluasi Parameter Indoqct Menggunakan Citra Pasien Plank Koroner</td><td>
+      <tr><td>Analisis Penggunaan Multi-Laef Colimator (MLC) Terhadap Distribusi Dosis OAR (Organ At Risk) Dengan Teknik IMRT (Intensity Modulated Radiation Therapy) Pada Kasus Nasofaring</td><td>
+    
+      </td>
+
+    </table>
+  </div>
+</div>
+
+<div class="section" id="struktur">
+  <div class="card">
+    <h2>🏛 Struktur Laboratorium</h2>
+    <p>• Ketua Lab — Prof.Dr. Syamsir D., D., MS.
+  </div>
+</div>
+
+<footer>© 2025 Lab Fisika Optik & Spektroskopi — Aesthetic Version</footer>
+
+</body></html>
